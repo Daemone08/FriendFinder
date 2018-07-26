@@ -47,14 +47,33 @@ module.exports = function (app) {
             newScore += current;
         }
         console.log(newScore)        
-        
+        // HERE IS WHERE I SUM UP THE SCORE FOR EVERYONE ELSE AND MAKE AN ARRAY AND THEN COMPARE
+
+
         
         // THEN DATA OF THE CLOSEST MATCH IS EXTRACTED
-        
+        // STAND IN MATCH
+        var match =     {
+            name: "PERSON1",
+            photo: "https://placeimg.com/400/400/people",
+            scores: [
+                1,
+                3,
+                4,
+                3,
+                2,
+                5,
+                4,
+                2,
+                1,
+                2
+            ]
+          };        
         // add user data to the API for future comparisons
         friendsData.push(req.body);
 
         // AS A RESPONSE SEND THE CLOSEST MATCH DATA
+        res.json(match);
         // res.send(// CLOSEST MATCH DATA)
         // )
     });
