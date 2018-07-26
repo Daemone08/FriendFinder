@@ -37,11 +37,22 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         // req.body is available since we're using the body-parser middleware
-        // add data to the API for future comparisons
-        friendsData.push(req.body);
-
+        var newFriend = req.body;
+        var newScoreArray = (newFriend.scores);
         // HERE IS WHERE THE Request.BODY IS COMPARED TO THE EXISTING API PEOPLE
+        // sum up newScore
+        var newScore = 0;
+        for (var i=0; i < newScoreArray.length; i++) {
+            var current = parseFloat(newScoreArray[i]);
+            newScore += current;
+        }
+        console.log(newScore)        
+        
+        
         // THEN DATA OF THE CLOSEST MATCH IS EXTRACTED
+        
+        // add user data to the API for future comparisons
+        friendsData.push(req.body);
 
         // AS A RESPONSE SEND THE CLOSEST MATCH DATA
         // res.send(// CLOSEST MATCH DATA)
