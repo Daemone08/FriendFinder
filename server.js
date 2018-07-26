@@ -1,6 +1,6 @@
-// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" BEGIN:
-// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" BEGIN:
-// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" BEGIN:
+// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" MODIFIED:
+// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" MODIFIED:
+// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" MODIFIED:
 
 // ==============================================================================
 // DEPENDENCIES
@@ -31,8 +31,8 @@ app.use(bodyParser.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // =============================================================================
 // LISTENER
@@ -43,6 +43,6 @@ app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
 
-// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" END.
-// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" END.
-// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" END.
+// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" MODIFIED END.
+// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" MODIFIED END.
+// BOILERPLATE SERVER CREATION FROM "HOT RESTAURANT" MODIFIED END.

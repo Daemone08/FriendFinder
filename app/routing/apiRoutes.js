@@ -44,8 +44,8 @@ module.exports = function (app) {
         // THEN DATA OF THE CLOSEST MATCH IS EXTRACTED
 
         // AS A RESPONSE SEND THE CLOSEST MATCH DATA
-        res.send(// CLOSEST MATCH DATA)
-        )
+        // res.send(// CLOSEST MATCH DATA)
+        // )
     });
 
     // ---------------------------------------------------------------------------
